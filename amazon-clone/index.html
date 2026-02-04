@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone | Shop Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="https://www.amazon.com/" class="nav-logo">
+            <svg width="100" height="30" viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg">
+                <text x="0" y="24" fill="white" font-family="Arial Black" font-size="24">amazon</text>
+                <path d="M15 28 Q45 35 75 28" stroke="#ff9900" stroke-width="2" fill="none" />
+                <path d="M72 26 L78 28 L74 32" stroke="#ff9900" stroke-width="2" fill="none" />
+            </svg>
+        </a>
+
+        <a href="https://www.amazon.com/gp/delivery/viewport" class="nav-item nav-location">
+            <span class="nav-text-1">Deliver to</span>
+            <div class="flex">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="white">
+                    <path
+                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                </svg>
+                <span class="nav-text-2">United Kingdom</span>
+            </div>
+        </a>
+
+        <div class="nav-search">
+            <div class="search-select">All</div>
+            <input type="text" class="search-input" placeholder="Search Amazon" id="amazon-search">
+            <div class="search-icon" id="search-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M15.5 14h-.79l-.28-.27a6.5 6.5 0 0 0 1.48-5.34c-.47-2.78-2.79-5-5.59-5.34a6.505 6.505 0 0 0-7.27 7.27c.34 2.8 2.56 5.12 5.34 5.59a6.5 6.5 0 0 0 5.34-1.48l.27.28v.79l4.25 4.25c.41.41 1.08.41 1.49 0 .41-.41.41-1.08 0-1.49L15.5 14zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                </svg>
+            </div>
+        </div>
+
+        <a href="https://www.amazon.com/ap/signin" class="nav-item">
+            <span class="nav-text-1">Hello, sign in</span>
+            <span class="nav-text-2">Account & Lists</span>
+        </a>
+
+        <a href="https://www.amazon.com/gp/css/order-history" class="nav-item">
+            <span class="nav-text-1">Returns</span>
+            <span class="nav-text-2">& Orders</span>
+        </a>
+
+        <a href="https://www.amazon.com/gp/cart/view.html" class="nav-item nav-cart">
+            <div class="relative">
+                <span class="cart-count">0</span>
+                <svg width="35" height="35" viewBox="0 0 24 24" fill="white">
+                    <path
+                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z" />
+                </svg>
+            </div>
+            <span class="nav-text-2">Cart</span>
+        </a>
+    </header>
+
+    <nav class="sub-navbar">
+        <a href="https://www.amazon.com/gp/site-directory" class="sub-nav-item all">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            </svg>
+            All
+        </a>
+        <a href="https://www.amazon.com/gp/goldbox" class="sub-nav-item">Today's Deals</a>
+        <a href="https://www.amazon.com/gp/help/customer/display.html" class="sub-nav-item">Customer Service</a>
+        <a href="https://www.amazon.com/registries" class="sub-nav-item">Registry</a>
+        <a href="https://www.amazon.com/gift-cards/" class="sub-nav-item">Gift Cards</a>
+        <a href="https://www.amazon.com/b?node=12766669011" class="sub-nav-item">Sell</a>
+    </nav>
+
+    <main>
+        <section id="hero">
+            <button class="carousel-btn prev">&#10094;</button>
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1500&q=80"
+                        alt="Electronics">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1500&q=80"
+                        alt="Fashion">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1484101403033-57105d2b77ac?auto=format&fit=crop&w=1500&q=80"
+                        alt="Home Decor">
+                </div>
+            </div>
+            <button class="carousel-btn next">&#10095;</button>
+        </section>
+
+        <section id="product-grid" class="container">
+            <div class="product-card">
+                <h2>Electronics</h2>
+                <img src="https://images.unsplash.com/photo-1526733151923-a67f7300c274?auto=format&fit=crop&w=400&q=80"
+                    alt="Electronics">
+                <a href="https://www.amazon.com/b?node=16225007011" class="shop-now">Shop now</a>
+            </div>
+            <div class="product-card">
+                <h2>Fashion</h2>
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=400&q=80"
+                    alt="Fashion">
+                <a href="https://www.amazon.com/fashion" class="shop-now">Shop now</a>
+            </div>
+            <div class="product-card">
+                <h2>Home & Kitchen</h2>
+                <img src="https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=400&q=80"
+                    alt="Kitchen">
+                <a href="https://www.amazon.com/kitchen" class="shop-now">Shop now</a>
+            </div>
+            <div class="product-card">
+                <h2>Beauty Picks</h2>
+                <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=400&q=80"
+                    alt="Beauty">
+                <a href="https://www.amazon.com/beauty" class="shop-now">Shop now</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Back to top</div>
+        <div class="footer-links container">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <a href="https://www.amazon.jobs/">Careers</a>
+                <a href="https://www.aboutamazon.com/">About Amazon</a>
+                <a href="https://www.aboutamazon.com/news">Press Center</a>
+            </div>
+            <div class="footer-column">
+                <h3>Make Money with Us</h3>
+                <a href="https://sell.amazon.com/">Sell products on Amazon</a>
+                <a href="https://sell.amazon.com/programs/amazon-business">Sell on Amazon Business</a>
+                <a href="https://affiliate-program.amazon.com/">Become an Affiliate</a>
+            </div>
+            <div class="footer-column">
+                <h3>Amazon Payment Products</h3>
+                <a href="https://www.amazon.com/credit-cards">Amazon Business Card</a>
+                <a href="https://www.amazon.com/shop-with-points">Shop with Points</a>
+                <a href="https://www.amazon.com/reload">Reload Your Balance</a>
+            </div>
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <a href="https://www.amazon.com/gp/help/customer/display.html">Your Account</a>
+                <a href="https://www.amazon.com/gp/css/order-history">Your Orders</a>
+                <a href="https://www.amazon.com/gp/help/customer/display.html">Help</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="https://www.amazon.com/">
+                <svg width="80" height="24" viewBox="0 0 100 30" xmlns="http://www.w3.org/2000/svg">
+                    <text x="0" y="24" fill="white" font-family="Arial Black" font-size="24">amazon</text>
+                    <path d="M15 28 Q45 35 75 28" stroke="#ff9900" stroke-width="2" fill="none" />
+                </svg>
+            </a>
+            <p style="color: #ccc; font-size: 12px; margin-top: 10px;">&copy; 1996-2026, Amazon.com, Inc. or its
+                affiliates</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
