@@ -43,7 +43,7 @@ Then visit `http://localhost:8000`.
 
 ## Live Demo
 
-GitHub Pages can be enabled from the repository settings to publish this project online.
+Live site: [Amazon Clone](https://ashuman5.github.io/amazon-clone/)
 
 ## Disclaimer
 
